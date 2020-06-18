@@ -1,7 +1,7 @@
 {
   "name": "zx-keel",
   "author": "chuzhixin <1204505056@qq.com>",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "homepage": "https://chu1204505056.gitee.io/byui-bookmarks/",
   "main": "dist/zx-keel.umd.min.js",
   "repository": {
