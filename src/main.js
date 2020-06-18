@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import {Heading, Img, Keel, Text} from "./components/export.js";
+import { Heading, Img, Keel, Text } from "./components/export.js";
 import "@/styles/keel-variables.scss";
 
 Vue.component("byui-keel", Keel);

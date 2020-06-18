@@ -1,36 +1,6 @@
-# zx-Keel(作者:初志鑫<1204505056@qq.com>)
+# zx-Keel
 
-## 注意事项
-
-```
-只能用于Vue CLI项目
-
-```
-
-## 鸣谢
-
-```
-努力了这么久,终于成了一名合格的代码搬运工,我只是有幸站在了巨人的肩膀上,感谢自己,感谢巨人...
-
-```
-
-## 实现功能
-
-```
-1.参考antdesign实现页面加载的骨架屏效果
-
-```
-
-### 商务合作与赞赏
-
-```
-邮箱  1204505056@qq.com
-QQ 1204505056
-
-如果你觉得这个项目帮助到了你，你可以赞赏一下作者:
-```
-
-![image](https://raw.githubusercontent.com/chuzhixin/donate/master/donation.png)
+#基础功能演示地址：[基础功能演示地址](https://chuzhixin.github.io/zx-keel/) #集成框架演示地址：[集成框架演示地址](http://mpfhrd48.sanxing.uz7.cn/vue-admin-beautiful/#/login?redirect=%2F)
 
 ## 安装方法
 
