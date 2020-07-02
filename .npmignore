@@ -1,0 +1,13 @@
+/node_modules
+/.idea
+/.vscode
+/public
+/src
+/.env
+/.eslintrc.js
+/.gitattributes
+/.gitignore
+/babel.config.js
+/deploy.sh
+/prettier.config.js
+/vue.config.js

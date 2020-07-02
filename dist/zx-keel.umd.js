@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "f3ac");
+/******/ 	return __webpack_require__(__webpack_require__.s = "ae97");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -879,6 +879,379 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "ae97":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "Keel", function() { return /* reexport */ Keel; });
+__webpack_require__.d(__webpack_exports__, "Heading", function() { return /* reexport */ KeelHeading; });
+__webpack_require__.d(__webpack_exports__, "Img", function() { return /* reexport */ KeelImg; });
+__webpack_require__.d(__webpack_exports__, "Text", function() { return /* reexport */ KeelText; });
+
+// CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.6@@vue/cli-service/lib/commands/build/setPublicPath.js
+// This file is imported into lib/wc client bundles.
+
+if (typeof window !== 'undefined') {
+  var currentScript = window.document.currentScript
+  if (true) {
+    var getCurrentScript = __webpack_require__("79e4")
+    currentScript = getCurrentScript()
+
+    // for backward compatibility, because previously we directly included the polyfill
+    if (!('currentScript' in document)) {
+      Object.defineProperty(document, 'currentScript', { get: getCurrentScript })
+    }
+  }
+
+  var src = currentScript && currentScript.src.match(/(.+\/)[^/]+\.js(\?.*)?$/)
+  if (src) {
+    __webpack_require__.p = src[1] // eslint-disable-line
+  }
+}
+
+// Indicate to webpack that this file can be concatenated
+/* harmony default export */ var setPublicPath = (null);
+
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"c3f718f6-vue-loader-template"}!./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/Keel.vue?vue&type=template&id=3248bac5&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.classObject},[_vm._t("default")],2)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/Keel.vue?vue&type=template&id=3248bac5&
+
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/Keel.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var Keelvue_type_script_lang_js_ = ({
+  props: {
+    rounded: {
+      type: Boolean,
+      default: false
+    },
+    centered: {
+      type: Boolean,
+      default: false
+    },
+    animated: {
+      type: Boolean,
+      default: true
+    }
+  },
+  computed: {
+    classObject: function classObject() {
+      return {
+        "vue-keel": true,
+        "vue-keel-is-rounded": this.rounded,
+        "vue-keel-is-centered": this.centered,
+        "vue-keel-is-animated": this.animated
+      };
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Keel.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_Keelvue_type_script_lang_js_ = (Keelvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/components/Keel.vue?vue&type=style&index=0&lang=scss&
+var Keelvue_type_style_index_0_lang_scss_ = __webpack_require__("c88f");
+
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () {
+        injectStyles.call(
+          this,
+          (options.functional ? this.parent : this).$root.$options.shadowRoot
+        )
+      }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functional component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+// CONCATENATED MODULE: ./src/components/Keel.vue
+
+
+
+
+
+
+/* normalize component */
+
+var component = normalizeComponent(
+  components_Keelvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var Keel = (component.exports);
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"c3f718f6-vue-loader-template"}!./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/KeelHeading.vue?vue&type=template&id=a76f836a&
+var KeelHeadingvue_type_template_id_a76f836a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.className},[(_vm.img)?_c('div',{class:(_vm.className + "__img")}):_vm._e(),_c('div',{class:(_vm.className + "__content")},[_c('div',{class:(_vm.className + "__title")}),_c('div',{class:(_vm.className + "__subtitle")})])])}
+var KeelHeadingvue_type_template_id_a76f836a_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/KeelHeading.vue?vue&type=template&id=a76f836a&
+
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/KeelHeading.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var KeelHeadingvue_type_script_lang_js_ = ({
+  name: "keel-heading",
+  data: function data() {
+    return {
+      className: "vue-keel-heading"
+    };
+  },
+  props: {
+    img: {
+      type: Boolean,
+      default: false
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/KeelHeading.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_KeelHeadingvue_type_script_lang_js_ = (KeelHeadingvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/KeelHeading.vue
+
+
+
+
+
+/* normalize component */
+
+var KeelHeading_component = normalizeComponent(
+  components_KeelHeadingvue_type_script_lang_js_,
+  KeelHeadingvue_type_template_id_a76f836a_render,
+  KeelHeadingvue_type_template_id_a76f836a_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var KeelHeading = (KeelHeading_component.exports);
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"c3f718f6-vue-loader-template"}!./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/KeelImg.vue?vue&type=template&id=70f68e8a&
+var KeelImgvue_type_template_id_70f68e8a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.className})}
+var KeelImgvue_type_template_id_70f68e8a_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/KeelImg.vue?vue&type=template&id=70f68e8a&
+
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/KeelImg.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+/* harmony default export */ var KeelImgvue_type_script_lang_js_ = ({
+  name: "keel-img",
+  data: function data() {
+    return {
+      className: "vue-keel-img"
+    };
+  }
+});
+// CONCATENATED MODULE: ./src/components/KeelImg.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_KeelImgvue_type_script_lang_js_ = (KeelImgvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/KeelImg.vue
+
+
+
+
+
+/* normalize component */
+
+var KeelImg_component = normalizeComponent(
+  components_KeelImgvue_type_script_lang_js_,
+  KeelImgvue_type_template_id_70f68e8a_render,
+  KeelImgvue_type_template_id_70f68e8a_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var KeelImg = (KeelImg_component.exports);
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"c3f718f6-vue-loader-template"}!./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/KeelText.vue?vue&type=template&id=466978fa&
+var KeelTextvue_type_template_id_466978fa_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.className},_vm._l((_vm.lines),function(n){return _c('div',{key:n,class:(_vm.className + "__line")})}),0)}
+var KeelTextvue_type_template_id_466978fa_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/KeelText.vue?vue&type=template&id=466978fa&
+
+// EXTERNAL MODULE: ./node_modules/_core-js@3.6.5@core-js/modules/es.number.constructor.js
+var es_number_constructor = __webpack_require__("513c");
+
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/KeelText.vue?vue&type=script&lang=js&
+
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var KeelTextvue_type_script_lang_js_ = ({
+  name: "keel-text",
+  data: function data() {
+    return {
+      className: "vue-keel-text"
+    };
+  },
+  props: {
+    lines: {
+      type: Number,
+      default: 4
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/KeelText.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_KeelTextvue_type_script_lang_js_ = (KeelTextvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/KeelText.vue
+
+
+
+
+
+/* normalize component */
+
+var KeelText_component = normalizeComponent(
+  components_KeelTextvue_type_script_lang_js_,
+  KeelTextvue_type_template_id_466978fa_render,
+  KeelTextvue_type_template_id_466978fa_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var KeelText = (KeelText_component.exports);
+// CONCATENATED MODULE: ./src/components/export.js
+
+
+
+
+
+
+if (typeof window !== "undefined" && window.Vue) {
+  window.Vue.component("zx-keel", Keel);
+  window.Vue.component("zx-keel-heading", KeelHeading);
+  window.Vue.component("zx-keel-img", KeelImg);
+  window.Vue.component("zx-keel-text", KeelText);
+}
+// CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.6@@vue/cli-service/lib/commands/build/entry-lib-no-default.js
+
+
+
+
+/***/ }),
+
 /***/ "b338":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -964,13 +1337,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "ba32":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "c10f":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1010,10 +1376,10 @@ module.exports = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_0_9_0_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_3_6_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_15_9_2_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_8_0_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_4_1_0_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_9_2_vue_loader_lib_index_js_vue_loader_options_Keel_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ba32");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_0_9_0_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_3_6_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_15_9_2_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_8_0_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_4_1_0_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_9_2_vue_loader_lib_index_js_vue_loader_options_Keel_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_0_9_0_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_3_6_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_15_9_2_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_8_0_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_4_1_0_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_9_2_vue_loader_lib_index_js_vue_loader_options_Keel_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_0_9_0_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_3_6_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_8_0_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_4_1_0_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_Keel_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("d324");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_0_9_0_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_3_6_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_8_0_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_4_1_0_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_Keel_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_0_9_0_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_3_6_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_8_0_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_4_1_0_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_Keel_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_0_9_0_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_3_6_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_15_9_2_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_8_0_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_4_1_0_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_9_2_vue_loader_lib_index_js_vue_loader_options_Keel_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_0_9_0_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_3_6_0_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_8_0_2_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_4_1_0_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_Keel_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -1043,6 +1409,13 @@ module.exports = function (it) {
   } return it;
 };
 
+
+/***/ }),
+
+/***/ "d324":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -1274,379 +1647,6 @@ module.exports = function (exec) {
     return true;
   }
 };
-
-
-/***/ }),
-
-/***/ "f3ac":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "Keel", function() { return /* reexport */ Keel; });
-__webpack_require__.d(__webpack_exports__, "Heading", function() { return /* reexport */ KeelHeading; });
-__webpack_require__.d(__webpack_exports__, "Img", function() { return /* reexport */ KeelImg; });
-__webpack_require__.d(__webpack_exports__, "Text", function() { return /* reexport */ KeelText; });
-
-// CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.4@@vue/cli-service/lib/commands/build/setPublicPath.js
-// This file is imported into lib/wc client bundles.
-
-if (typeof window !== 'undefined') {
-  var currentScript = window.document.currentScript
-  if (true) {
-    var getCurrentScript = __webpack_require__("79e4")
-    currentScript = getCurrentScript()
-
-    // for backward compatibility, because previously we directly included the polyfill
-    if (!('currentScript' in document)) {
-      Object.defineProperty(document, 'currentScript', { get: getCurrentScript })
-    }
-  }
-
-  var src = currentScript && currentScript.src.match(/(.+\/)[^/]+\.js(\?.*)?$/)
-  if (src) {
-    __webpack_require__.p = src[1] // eslint-disable-line
-  }
-}
-
-// Indicate to webpack that this file can be concatenated
-/* harmony default export */ var setPublicPath = (null);
-
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"56209538-vue-loader-template"}!./node_modules/_vue-loader@15.9.2@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/Keel.vue?vue&type=template&id=3248bac5&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.classObject},[_vm._t("default")],2)}
-var staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/components/Keel.vue?vue&type=template&id=3248bac5&
-
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/Keel.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var Keelvue_type_script_lang_js_ = ({
-  props: {
-    rounded: {
-      type: Boolean,
-      default: false
-    },
-    centered: {
-      type: Boolean,
-      default: false
-    },
-    animated: {
-      type: Boolean,
-      default: true
-    }
-  },
-  computed: {
-    classObject: function classObject() {
-      return {
-        "vue-keel": true,
-        "vue-keel-is-rounded": this.rounded,
-        "vue-keel-is-centered": this.centered,
-        "vue-keel-is-animated": this.animated
-      };
-    }
-  }
-});
-// CONCATENATED MODULE: ./src/components/Keel.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_Keelvue_type_script_lang_js_ = (Keelvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/Keel.vue?vue&type=style&index=0&lang=scss&
-var Keelvue_type_style_index_0_lang_scss_ = __webpack_require__("c88f");
-
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.2@vue-loader/lib/runtime/componentNormalizer.js
-/* globals __VUE_SSR_CONTEXT__ */
-
-// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
-// This module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle.
-
-function normalizeComponent (
-  scriptExports,
-  render,
-  staticRenderFns,
-  functionalTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier, /* server only */
-  shadowMode /* vue-cli only */
-) {
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
-
-  // render functions
-  if (render) {
-    options.render = render
-    options.staticRenderFns = staticRenderFns
-    options._compiled = true
-  }
-
-  // functional template
-  if (functionalTemplate) {
-    options.functional = true
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = 'data-v-' + scopeId
-  }
-
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = shadowMode
-      ? function () {
-        injectStyles.call(
-          this,
-          (options.functional ? this.parent : this).$root.$options.shadowRoot
-        )
-      }
-      : injectStyles
-  }
-
-  if (hook) {
-    if (options.functional) {
-      // for template-only hot-reload because in that case the render fn doesn't
-      // go through the normalizer
-      options._injectStyles = hook
-      // register for functional component in vue file
-      var originalRender = options.render
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return originalRender(h, context)
-      }
-    } else {
-      // inject component registration as beforeCreate hook
-      var existing = options.beforeCreate
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    }
-  }
-
-  return {
-    exports: scriptExports,
-    options: options
-  }
-}
-
-// CONCATENATED MODULE: ./src/components/Keel.vue
-
-
-
-
-
-
-/* normalize component */
-
-var component = normalizeComponent(
-  components_Keelvue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var Keel = (component.exports);
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"56209538-vue-loader-template"}!./node_modules/_vue-loader@15.9.2@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/KeelHeading.vue?vue&type=template&id=a76f836a&
-var KeelHeadingvue_type_template_id_a76f836a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.className},[(_vm.img)?_c('div',{class:(_vm.className + "__img")}):_vm._e(),_c('div',{class:(_vm.className + "__content")},[_c('div',{class:(_vm.className + "__title")}),_c('div',{class:(_vm.className + "__subtitle")})])])}
-var KeelHeadingvue_type_template_id_a76f836a_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/components/KeelHeading.vue?vue&type=template&id=a76f836a&
-
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/KeelHeading.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var KeelHeadingvue_type_script_lang_js_ = ({
-  name: "keel-heading",
-  data: function data() {
-    return {
-      className: "vue-keel-heading"
-    };
-  },
-  props: {
-    img: {
-      type: Boolean,
-      default: false
-    }
-  }
-});
-// CONCATENATED MODULE: ./src/components/KeelHeading.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_KeelHeadingvue_type_script_lang_js_ = (KeelHeadingvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./src/components/KeelHeading.vue
-
-
-
-
-
-/* normalize component */
-
-var KeelHeading_component = normalizeComponent(
-  components_KeelHeadingvue_type_script_lang_js_,
-  KeelHeadingvue_type_template_id_a76f836a_render,
-  KeelHeadingvue_type_template_id_a76f836a_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var KeelHeading = (KeelHeading_component.exports);
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"56209538-vue-loader-template"}!./node_modules/_vue-loader@15.9.2@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/KeelImg.vue?vue&type=template&id=70f68e8a&
-var KeelImgvue_type_template_id_70f68e8a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.className})}
-var KeelImgvue_type_template_id_70f68e8a_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/components/KeelImg.vue?vue&type=template&id=70f68e8a&
-
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/KeelImg.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-/* harmony default export */ var KeelImgvue_type_script_lang_js_ = ({
-  name: "keel-img",
-  data: function data() {
-    return {
-      className: "vue-keel-img"
-    };
-  }
-});
-// CONCATENATED MODULE: ./src/components/KeelImg.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_KeelImgvue_type_script_lang_js_ = (KeelImgvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./src/components/KeelImg.vue
-
-
-
-
-
-/* normalize component */
-
-var KeelImg_component = normalizeComponent(
-  components_KeelImgvue_type_script_lang_js_,
-  KeelImgvue_type_template_id_70f68e8a_render,
-  KeelImgvue_type_template_id_70f68e8a_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var KeelImg = (KeelImg_component.exports);
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"56209538-vue-loader-template"}!./node_modules/_vue-loader@15.9.2@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/KeelText.vue?vue&type=template&id=466978fa&
-var KeelTextvue_type_template_id_466978fa_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.className},_vm._l((_vm.lines),function(n){return _c('div',{key:n,class:(_vm.className + "__line")})}),0)}
-var KeelTextvue_type_template_id_466978fa_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/components/KeelText.vue?vue&type=template&id=466978fa&
-
-// EXTERNAL MODULE: ./node_modules/_core-js@3.6.5@core-js/modules/es.number.constructor.js
-var es_number_constructor = __webpack_require__("513c");
-
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/KeelText.vue?vue&type=script&lang=js&
-
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var KeelTextvue_type_script_lang_js_ = ({
-  name: "keel-text",
-  data: function data() {
-    return {
-      className: "vue-keel-text"
-    };
-  },
-  props: {
-    lines: {
-      type: Number,
-      default: 4
-    }
-  }
-});
-// CONCATENATED MODULE: ./src/components/KeelText.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_KeelTextvue_type_script_lang_js_ = (KeelTextvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./src/components/KeelText.vue
-
-
-
-
-
-/* normalize component */
-
-var KeelText_component = normalizeComponent(
-  components_KeelTextvue_type_script_lang_js_,
-  KeelTextvue_type_template_id_466978fa_render,
-  KeelTextvue_type_template_id_466978fa_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var KeelText = (KeelText_component.exports);
-// CONCATENATED MODULE: ./src/components/export.js
-
-
-
-
-
-
-if (typeof window !== "undefined" && window.Vue) {
-  window.Vue.component("zx-keel", Keel);
-  window.Vue.component("zx-keel-heading", KeelHeading);
-  window.Vue.component("zx-keel-img", KeelImg);
-  window.Vue.component("zx-keel-text", KeelText);
-}
-// CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.4@@vue/cli-service/lib/commands/build/entry-lib-no-default.js
-
-
 
 
 /***/ }),
